@@ -1,4 +1,4 @@
-      * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,12 +44,11 @@ nav a:hover {
 
 .background {
   background-image: linear-gradient(rgba(18, 1, 1, 0.7), rgba(0, 0, 0, 0.7)),
-    url(Pizza-3007395.jpg);
+    url(./Html/asset/image/Pizza-3007395.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  height: 600px;
   align-items: center;
   text-align: center;
   padding: 0px 15px;
@@ -75,7 +74,6 @@ nav a:hover {
   border-radius: 10px 0px 0px 0px;
   object-fit: cover;
   margin: 0px 25px 0px 0px;
-  
 }
 
 .d {
@@ -176,6 +174,7 @@ td {
   border-bottom: 1px solid #d04b4b;
   background-color: aliceblue;
   width: 80%;
+  margin: 40px auto;
   box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
@@ -190,8 +189,12 @@ td {
 }
 
 .mid {
+  width: 100%;
+  max-width: 800px;
   padding: 20px;
   background-color: rgb(235, 239, 243);
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 
 .form {
@@ -306,7 +309,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 @media (max-width: 768px) {
   .background {
     height: auto;
@@ -331,8 +333,6 @@ html {
   th,
   td {
     width: 100%;
-    display: block;
-    overflow-x: auto;
   }
 
   .form {
@@ -394,6 +394,6 @@ html {
     gap: 25px;
   }
 }
-.st{
+.st {
   display: inline-block;
 }
