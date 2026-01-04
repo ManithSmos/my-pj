@@ -44,7 +44,7 @@ nav a:hover {
 
 .background {
   background-image: linear-gradient(rgba(18, 1, 1, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./Html/asset/image/Pizza-3007395.jpg);
+    url(Pizza-3007395.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
