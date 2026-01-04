@@ -12,13 +12,13 @@ body {
 }
 
 .head {
-  background-color: brown;
+  background-color: rgb(107, 46, 46);
   width: 100%;
   padding: 20px;
   color: aliceblue;
   position: fixed;
   top: 0;
-  left: 0;
+  z-index: 100;
 }
 
 .text1 {
@@ -75,6 +75,7 @@ nav a:hover {
   border-radius: 10px 0px 0px 0px;
   object-fit: cover;
   margin: 0px 25px 0px 0px;
+  
 }
 
 .d {
@@ -92,7 +93,7 @@ nav a:hover {
 .d:hover,
 .c:hover,
 .c1:hover {
-  transform: ease-in translateY(-4px);
+  transform: translateY(-4px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -301,25 +302,10 @@ i {
   font-size: 1.5em;
 }
 
-/* ====================== */
-/* EXTRA — smooth + clean */
-/* ====================== */
-
 html {
   scroll-behavior: smooth;
 }
 
-img {
-  transition: transform 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.02);
-}
-
-/* ====================== */
-/* RESPONSIVE (MOBILE)    */
-/* ====================== */
 
 @media (max-width: 768px) {
   .background {
