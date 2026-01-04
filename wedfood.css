@@ -1,1 +1,413 @@
-zzz
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(224, 226, 227);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+  background-color: brown;
+  width: 100%;
+  padding: 20px;
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.text1 {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background: rgb(151, 124, 124);
+  border-radius: 20px;
+}
+
+.background {
+  background-image: linear-gradient(rgba(18, 1, 1, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Html/asset/image/Pizza-3007395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px;
+  color: aliceblue;
+  min-height: 600px;
+  height: auto;
+  padding-top: 120px;
+}
+
+.p1::first-letter {
+  color: yellow;
+  font-size: 2em;
+}
+
+.h {
+  padding: 25px;
+}
+
+.img {
+  float: left;
+  width: 270px;
+  height: 240px;
+  border-radius: 10px 0px 0px 0px;
+  object-fit: cover;
+  margin: 0px 25px 0px 0px;
+}
+
+.d {
+  background-color: rgb(246, 246, 246);
+  margin: 0px 72px 0px 72px;
+  padding: 0px 0px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.d:hover,
+.c:hover,
+.c1:hover {
+  transform: ease-in translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.i1 {
+  margin: 15px;
+}
+
+.st li::marker {
+  content: "🥕";
+}
+
+.p4 {
+  margin: 20px 0 0 0;
+}
+
+.st1 li::marker {
+  color: red;
+}
+
+.c {
+  background-color: rgb(246, 246, 246);
+  margin: 20px 72px 0px 72px;
+  padding: 0px px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.c1 {
+  background-color: rgb(246, 246, 246);
+  margin: 20px 72px 0px 72px;
+  padding: 0px px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.n {
+  padding: 25px;
+}
+
+.line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f80303;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.line1 {
+  background-color: #f80303;
+  width: 60px;
+  height: 3px;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.style {
+  background-color: rgb(235, 239, 243);
+  margin: 65px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 20px 50px;
+  text-align: left;
+  border-bottom: 1px solid #d04b4b;
+  background-color: aliceblue;
+  width: 80%;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.color1 td {
+  background-color: #d04b4b;
+  color: white;
+}
+
+.tb tr:hover td {
+  background-color: #cca4a4;
+}
+
+.mid {
+  padding: 20px;
+  background-color: rgb(235, 239, 243);
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bt {
+  background-color: brown;
+  color: white;
+  padding: 6px 27px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  float: right;
+  margin: -12px 0px 0px 0px;
+  position: static;
+}
+
+.bt2 {
+  background-color: gray;
+  color: white;
+  padding: 3px 19px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: -7px 15px 0px 0px;
+  float: right;
+}
+
+label,
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  padding: 5px;
+}
+
+.sh {
+  padding: 50px 0px 30px 0px;
+}
+
+form::selection {
+  background-color: brown;
+  color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  color: rgb(64, 60, 60);
+  border: 2px solid brown;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.colorcode {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.bgcolor {
+  width: 100%;
+  background-color: rgb(32, 35, 36);
+  margin-top: 100px;
+  height: 100px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0px 40px 0px;
+  background-color: rgb(32, 35, 36);
+  color: white;
+}
+
+.fb,
+.ig,
+.git {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.fb:hover,
+.ig:hover,
+.git:hover {
+  color: brown;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+/* ====================== */
+/* EXTRA — smooth + clean */
+/* ====================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* ====================== */
+/* RESPONSIVE (MOBILE)    */
+/* ====================== */
+
+@media (max-width: 768px) {
+  .background {
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .d,
+  .c,
+  .c1 {
+    flex-direction: column;
+    margin: 10px 15px;
+  }
+
+  .img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  table,
+  th,
+  td {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
+}
+
+.footer {
+  background: rgb(32, 35, 36);
+  color: white;
+  padding: 30px 0 10px;
+  margin-top: 100px;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.footer-top p {
+  margin: 3px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0 25px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: brown;
+  transform: translateY(-4px);
+}
+
+.contact-info i {
+  font-size: 1.7em;
+  margin-bottom: 2px;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    gap: 25px;
+  }
+}
+.st{
+  display: inline-block;
+}
