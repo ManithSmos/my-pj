@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Food</title>
+    <link rel="icon" href="./asset/image/3844724.png" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="wedfood.css">
+
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(224, 226, 227);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+  background-color: brown;
+  width: 100%;
+  padding: 20px;
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.text1 {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background: rgb(151, 124, 124);
+  border-radius: 20px;
+}
+
+.background {
+  background-image: linear-gradient(rgba(18, 1, 1, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Html/asset/image/Pizza-3007395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px;
+  color: aliceblue;
+  min-height: 600px;
+  height: auto;
+  padding-top: 120px;
+}
+
+.p1::first-letter {
+  color: yellow;
+  font-size: 2em;
+}
+
+.h {
+  padding: 25px;
+}
+
+.img {
+  float: left;
+  width: 270px;
+  height: 240px;
+  border-radius: 10px 0px 0px 0px;
+  object-fit: cover;
+  margin: 0px 25px 0px 0px;
+}
+
+.d {
+  background-color: rgb(246, 246, 246);
+  margin: 0px 72px 0px 72px;
+  padding: 0px 0px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.d:hover,
+.c:hover,
+.c1:hover {
+  transform: ease-in translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.i1 {
+  margin: 15px;
+}
+
+.st li::marker {
+  content: "🥕";
+}
+
+.p4 {
+  margin: 20px 0 0 0;
+}
+
+.st1 li::marker {
+  color: red;
+}
+
+.c {
+  background-color: rgb(246, 246, 246);
+  margin: 20px 72px 0px 72px;
+  padding: 0px px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.c1 {
+  background-color: rgb(246, 246, 246);
+  margin: 20px 72px 0px 72px;
+  padding: 0px px 10px 0px;
+  border-radius: 10px;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.n {
+  padding: 25px;
+}
+
+.line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f80303;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.line1 {
+  background-color: #f80303;
+  width: 60px;
+  height: 3px;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.style {
+  background-color: rgb(235, 239, 243);
+  margin: 65px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 20px 50px;
+  text-align: left;
+  border-bottom: 1px solid #d04b4b;
+  background-color: aliceblue;
+  width: 80%;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.color1 td {
+  background-color: #d04b4b;
+  color: white;
+}
+
+.tb tr:hover td {
+  background-color: #cca4a4;
+}
+
+.mid {
+  padding: 20px;
+  background-color: rgb(235, 239, 243);
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bt {
+  background-color: brown;
+  color: white;
+  padding: 6px 27px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  float: right;
+  margin: -12px 0px 0px 0px;
+  position: static;
+}
+
+.bt2 {
+  background-color: gray;
+  color: white;
+  padding: 3px 19px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: -7px 15px 0px 0px;
+  float: right;
+}
+
+label,
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  padding: 5px;
+}
+
+.sh {
+  padding: 50px 0px 30px 0px;
+}
+
+form::selection {
+  background-color: brown;
+  color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  color: rgb(64, 60, 60);
+  border: 2px solid brown;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.colorcode {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.bgcolor {
+  width: 100%;
+  background-color: rgb(32, 35, 36);
+  margin-top: 100px;
+  height: 100px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0px 40px 0px;
+  background-color: rgb(32, 35, 36);
+  color: white;
+}
+
+.fb,
+.ig,
+.git {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.fb:hover,
+.ig:hover,
+.git:hover {
+  color: brown;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+/* ====================== */
+/* EXTRA — smooth + clean */
+/* ====================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* ====================== */
+/* RESPONSIVE (MOBILE)    */
+/* ====================== */
+
+@media (max-width: 768px) {
+  .background {
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .d,
+  .c,
+  .c1 {
+    flex-direction: column;
+    margin: 10px 15px;
+  }
+
+  .img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  table,
+  th,
+  td {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
+}
+
+.footer {
+  background: rgb(32, 35, 36);
+  color: white;
+  padding: 30px 0 10px;
+  margin-top: 100px;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.footer-top p {
+  margin: 3px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0 25px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: brown;
+  transform: translateY(-4px);
+}
+
+.contact-info i {
+  font-size: 1.7em;
+  margin-bottom: 2px;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    gap: 25px;
+  }
+}
+.st{
+  display: inline-block;
+}
+
+    </style>
+  </head>
+  <body>
+    <section id="home">
+      <header class="head">
+        <div class="text1">My Recipe Collection</div>
+        <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#recipe">Recipe</a>
+            <a href="#nt">Nutrition</a>
+            <a href="#ct">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <main class="background">
+      <div>
+        <h1>Welcome to My kitchen</h1>
+        <p class="p1">
+          DLorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+          officiis eveniet, earum id impedit quae quis, necessitatibus nobis rem
+          exercitationem eos error tempore unde minus magni. Totam cumque
+          repellat repudiandae!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <section id="recipe">
+        <div>
+          <h1 class="h" style="text-align: center; color: red">
+            Featured Recipes
+          </h1>
+          <div class="line1"></div>
+        </div>
+      </section>
+      <div class="d">
+        <img class="img" src="./Html/asset/image/images.jpg" alt="" />
+
+        <div class="i1">
+          <div class="i7">
+          <h4 style="color: brown">Fresh Garden Salad</h4>
+          <br />
+          <p style="color: gray">⏲️ <i>Prep time: 15 minutes</i></p>
+          <br />
+          <h4>Ingredients:</h4>
+          <br />
+          <ul class="st" style="margin-left: 20px">
+            <li>Mixed</li>
+            <br />
+            <li>Cherry</li>
+            <br />
+            <li>Cucumber</li>
+          </ul>
+            </div>
+          <div class="p4">
+            <h4>Instructions:</h4>
+            <br />
+            <ul class="st1">
+              <ol class="ol" style="margin-left: 20px; margin-top: 5px">
+                <li>Wash all vegetables</li>
+                <br />
+                <li>Chop vegetables</li>
+                <br />
+                <li>Mix Green in large bowl</li>
+                <br />
+                <li>Add dressing and toss gently</li>
+                <br />
+                <li>Serve immediately</li>
+              </ol>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c">
+        <img
+          class="img"
+          src="./Html/asset/image/k_Photo_Recipes_2023-01-Caramelized-Tomato-Paste-Pasta_06-CARAMELIZED-TOMATO-PASTE-PASTA-039.jpg"
+          alt=""
+        />
+        <div class="i1">
+          <h4 style="color: brown">Classic Pasta Primavera</h4>
+          <br />
+          <p style="color: gray">⏲️ <i>Prep time: 30 minutes</i></p>
+          <br />
+          <h4>Ingredients:</h4>
+          <br />
+          <ul class="st" style="margin-left: 20px">
+            <li>Pasta (penne or speghetii)</li>
+            <br />
+            <li>Bell peppers</li>
+            <br />
+            <li>Zucchiii</li>
+          </ul>
+          <div class="p4">
+            <h4>Instructions:</h4>
+            <br />
+            <ul class="st1">
+              <ol class="ol" style="margin-left: 20px; margin-top: 5px">
+                <li>Wash all vegetables</li>
+                <br />
+                <li>Chop vegetables</li>
+                <br />
+                <li>Mix Green in large bowl</li>
+                <br />
+                <li>Add dressing and toss gently</li>
+                <br />
+                <li>Serve immediately</li>
+              </ol>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c1">
+        <img
+          class="img"
+          src="./Html/asset/image/14-Healthy-foods-for-healthy-diet.jpeg"
+          alt=""
+        />
+        <div class="i1">
+          <h4 style="color: brown">Heathly Breakfast Bowl</h4>
+          <br />
+          <p style="color: gray">⏲️ <i>Prep time: 10 minutes</i></p>
+          <br />
+          <h4>Ingredients:</h4>
+          <br />
+          <ul class="st" style="margin-left: 20px">
+            <li>Granola</li>
+            <br />
+            <li>Greek Yogurt</li>
+            <br />
+            <li>Fresh berries</li>
+          </ul>
+          <div class="p4">
+            <h4>Instructions:</h4>
+            <br />
+            <ul class="st1">
+              <ol class="ol" style="margin-left: 20px; margin-top: 5px">
+                <li>Add Yogurt to a bowl</li>
+                <br />
+                <li>Top with fresh berries</li>
+                <br />
+                <li>Sprinkle granola on top</li>
+                <br />
+                <li>Add chia seeds and enjoy</li>
+                <br />
+                <li>Drizzle with honey</li>
+              </ol>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <section id="nt">
+      <div class="style">
+        <div class="n" style="text-align: center; color: red">
+          <h1>Nutrition Facts</h1>
+          <div class="line"></div>
+        </div>
+        </section>
+        <div class="mid">
+          <center>
+            <table class="tb">
+              <tr class="color1">
+                <td>Recipe</td>
+                <td>Colories</td>
+                <td>Protein</td>
+                <td>Cards(g)</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">Fresh Garden Salad</td>
+                <td>150</td>
+                <td>5</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td colspan="3">Low carlorie,high fiber option</td>
+              </tr>
+
+              <tr>
+                <td>Classic Pasta Primavara</td>
+                <td>420</td>
+                <td>15</td>
+                <td>65</td>
+              </tr>
+
+              <tr>
+                <td>Healthy BreakFast Bowl</td>
+                <td>280</td>
+                <td>12</td>
+                <td>38</td>
+              </tr>
+
+              <tr>
+                <td>Average per serving</td>
+                <td></td>
+                <td>11</td>
+                <td>38</td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+      <!-- Feed Back Form -->
+       <section id="ct">
+        <div>
+          <div class="sh">
+            <h1 style="text-align: center; color: red;">Share Your Feedback</h1>
+            <div class="line"></div>
+          </div>
+          <div class="form">
+              <form action="">
+                <div class="select">
+                <label for="name">Your Name:</label><br />
+                <input class="it" type="text" id="name" name="name" placeholder="Enter Name"/><br /><br />
+
+                <label for="email">Email Address :</label><br />
+                <input type="email" id="email" name="email" placeholder="Enter Email"/><br /><br />
+
+                <label for="recipe">Recipe:</label><br />
+                <select id="recipe" name="recipe">
+                  <option value="">--select a recipe--</option>
+                  <option value="salad">Fresh Garden Salad</option>
+                  <option value="pasta">Classic Pasta Primavera</option>
+                  <option value="breakfast">Healthy Breakfast Bowl</option>
+                </select><br /><br />
+
+                <label for="message">Your Message:</label><br />
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Tell us what u think"></textarea
+                ><br /><br />
+                </div>
+                <button class="bt" type="submit">Submit</button>
+                <button class="bt2" type="reset">Reset</button>
+              </form>
+          </div>
+        </div>
+       </section>
+<footer class="footer">
+  <div class="footer-top">
+    <p>&copy; 2026 My Recipe Collection — All rights reserved.</p>
+    <p>Created by Manith</p>
+  </div>
+
+  <div class="contact-info">
+    <div class="fb">
+      <a href="https://web.facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
+
+    <div class="ig">
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+    </div>
+
+    <div class="git">
+      <a href="https://github.com/" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
